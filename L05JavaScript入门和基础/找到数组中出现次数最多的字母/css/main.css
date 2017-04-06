@@ -1,0 +1,27 @@
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.desc {
+    font-size: 1.3em;
+    height: auto;
+    margin: 20px auto;
+}
+
+.custom-btn {
+    font-size: 1.5em;
+    display: block;
+    height: 48px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+#result {
+    display: block;
+    font-size: 1.3em;
+    height: auto;
+    margin: 20px auto;
+}

@@ -1,0 +1,63 @@
+//@import "compass/reset";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+  border: 0 none;
+}
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes rotate {
+  0% {
+    margin-bottom: 2px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+  }
+  10% {
+    margin-bottom: -2px;
+  }
+  100% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+  }
+}

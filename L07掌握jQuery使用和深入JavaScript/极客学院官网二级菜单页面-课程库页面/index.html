@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>极客学院</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <!--head-->
+    <div class="nav">
+        <!--顶部的内容的容器-->
+        <div class="nav_content">
+            <div class="top_logo"><a href="#"><img src="img/logo.png" alt="极客学院logo"></a></div>
+            <div class="nav_menu"><a href="#">首页</a></div>
+            <div class="nav_menu nav_with_arrow" id="nav_college"><a href="#">职业学院</a><i
+                    class="arrow_icon"></i></div>
+            <!--学院悬浮显示菜单-->
+            <div class="college_menu">
+                <span class="college_title">前端学院</span>
+                <span class="college_name">Web前端工程师</span>
+                <span class="college_name">微信小程序工程师</span>
+                <span class="college_title">后端学院</span>
+                <span class="college_name">Python Web工程师</span>
+                <span class="college_name">Go语言工程师</span>
+                <span class="college_title">移动学院</span>
+                <span class="college_name">Android工程师</span>
+                <span class="college_name">ios工程师</span>
+            </div>
+            <div class="nav_menu nav_with_arrow" id="nav_course"><a href="#">会员课程</a><i
+                    class="arrow_icon"></i></div>
+            <!--课程悬浮菜单-->
+            <div class="course_menu">
+                <span class="course_name">课程库</span>
+                <span class="course_name">职业路径图</span>
+                <span class="course_name">知识体系图</span>
+                <span class="course_name">系列课程</span>
+                <span class="course_name">课程标签</span>
+                <span class="course_name">VIP会员购买</span>
+            </div>
+            <div class="nav_menu nav_with_arrow" id="nav_community"><a href="#">极客社区</a><i
+                    class="arrow_icon"></i></div>
+            <!--社区悬浮菜单-->
+            <div class="community_menu">
+                <span class="community_name">技术问答</span>
+                <span class="community_name">wiki</span>
+                <span class="community_name">社群</span>
+                <span class="community_name">资源下载</span>
+            </div>
+            <div class="right_menu login_menu"><img src="img/login-icon.png" class="login_icon">
+            </div>
+            <div class="right_menu app_menu"><img src="img/app-icon.png" class="app_icon"></div>
+            <div class="right_menu search_menu"><img src="img/search-icon.png" class="search_icon">
+            </div>
+            <div class="search_content">
+                <img src="img/search-icon.png" alt="" class="left_search_icon">
+                <input type="text" placeholder="搜索问答，wiki和课程" id="search_input">
+                <img id="search_close" src="img/close-icon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="content">
+        <div class="content_container">
+            <div class="content_left">
+                <div class="left_top">
+                    <span class="left_title">课程库</span>
+                    <span class="left_child">移动开发</span>
+                    <span class="left_child">前端开发</span>
+                    <span class="left_child">后端开发</span>
+                    <span class="left_child">基础知识</span>
+                    <span class="left_child">云计算&大数据</span>
+                    <span class="left_child">智能物件&物联网</span>
+                    <span class="left_child">数据库</span>
+                    <span class="left_child">企业IT</span>
+                    <span class="left_child">设计&产品&测试</span>
+                </div>
+                <span class="left_bottom">职业路径图</span>
+                <span class="left_bottom">知识体系图</span>
+                <span class="left_bottom">系列课程</span>
+                <span class="left_bottom">课程标签</span>
+            </div>
+            <div class="content_left_menu">
+                <div class="left_menu_item">
+                    <span class="left_menu_item_title">应用开发</span>
+                    <span class="left_menu_item_name">Android</span>
+                    <span class="left_menu_item_name">ios</span>
+                </div>
+                <div class="left_menu_item">
+                    <span class="left_menu_item_title">应用开发</span>
+                    <span class="left_menu_item_name">Android</span>
+                    <span class="left_menu_item_name">ios</span>
+                </div>
+                <div class="left_menu_item">
+                    <span class="left_menu_item_title">应用开发</span>
+                    <span class="left_menu_item_name">Android</span>
+                    <span class="left_menu_item_name">ios</span>
+                </div>
+                <div class="left_menu_item">
+                    <span class="left_menu_item_title">应用开发</span>
+                    <span class="left_menu_item_name">Android</span>
+                    <span class="left_menu_item_name">ios</span>
+                </div>
+                <div class="left_menu_item">
+                    <span class="left_menu_item_title">应用开发</span>
+                    <span class="left_menu_item_name">Android</span>
+                    <span class="left_menu_item_name">ios</span>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="content_top">
+                    <span class="all_cursor">全部课程</span>
+                    <div class="content_top_menu">最新<i class="arrow_icon"></i>
+                        <div class="top_menu">
+                            <span class="menu_title">最新</span>
+                            <span class="menu_child">最热</span>
+                            <span class="menu_child">最新</span>
+                        </div>
+                    </div>
+                    <div class="content_top_menu">课程类型<i class="arrow_icon"></i>
+                        <div class="top_menu">
+                            <span class="menu_title">课程类型</span>
+                            <span class="menu_child">VIP</span>
+                            <span class="menu_child">免费</span>
+                            <span class="menu_child">认证专享</span>
+                            <span class="menu_child">全部</span>
+                        </div>
+                    </div>
+                    <div class="content_top_menu">内容类型<i class="arrow_icon"></i>
+                        <div class="top_menu">
+                            <span class="menu_title">内容类型</span>
+                            <span class="menu_child">知识精讲</span>
+                            <span class="menu_child">项目实战</span>
+                            <span class="menu_child">全部</span>
+                        </div>
+                    </div>
+                    <div class="content_top_menu">难度等级<i class="arrow_icon"></i>
+                        <div class="top_menu">
+                            <span class="menu_title">难度等级</span>
+                            <span class="menu_child">初级</span>
+                            <span class="menu_child">高级</span>
+                            <span class="menu_child">中级</span>
+                            <span class="menu_child">全部</span>
+                        </div>
+                    </div>
+                    <div class="content_top_menu_right">
+                        <div id="menu_kuai"><img src="img/icon-kuai.png"
+                                                 alt=""></div>
+                        <div id="menu_list"><img src="img/icon-list.png"
+                                                 alt=""></div>
+                    </div>
+                </div>
+                <div class="content_list">
+                    <div class="content_item content_item_first_line">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item content_item_first_line">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item content_item_first_line">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                    <div class="content_item">
+                        <img src="img/cursor_bg.jpg" alt="" class="cursor_bg">
+                        <div class="cursor_bg_cover_bg">
+                            <img src="img/player_icon.png" alt="player">
+                        </div>
+                        <div class="cursor_detail">
+                            <img src="img/cloud.png" alt="" class="left_top_cloud">
+                            <span class="cursor_num">3333人学习</span>
+                            <span class="cursor_name">腾讯云产品</span>
+                            <span class="cursor_desc">腾讯产品介绍，腾讯产品介绍</span>
+                            <span class="cursor_data">5课时   177分钟   初级</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_left">
+                <img src="img/jk-logo-footer.png" alt="">
+                <span>极客学院，编程是一种信仰！</span>
+            </div>
+            <div class="footer_mid">
+
+                <div class="footer_item">
+                    <span class="footer_item_title">职业学院</span>
+                    <span class="footer_item_child">web前端工程师</span>
+                    <span class="footer_item_child">Python Web工程师</span>
+                    <span class="footer_item_child">Go语言工程师</span>
+                    <span class="footer_item_child">ios工程师</span>
+                    <span class="footer_item_child">微信小程序工程师</span>
+                </div>
+                <div class="footer_item">
+                    <span class="footer_item_title">会员课程</span>
+                    <span class="footer_item_child">课程库</span>
+                    <span class="footer_item_child">知识体系图</span>
+                    <span class="footer_item_child">职业路径图</span>
+                    <span class="footer_item_child">系列课程</span>
+                    <span class="footer_item_child">课程标签</span>
+                </div>
+                <div class="footer_item">
+                    <span class="footer_item_title">极客社区</span>
+                    <span class="footer_item_child">技术问答</span>
+                    <span class="footer_item_child">Wiki</span>
+                    <span class="footer_item_child">资源下载</span>
+                    <span class="footer_item_child">社群</span>
+                </div>
+                <div class="footer_item">
+                    <span class="footer_item_title">其他</span>
+                    <span class="footer_item_child">关于我们</span>
+                    <span class="footer_item_child">加入我们</span>
+                    <span class="footer_item_child">讲师合作</span>
+                    <span class="footer_item_child">联系我们</span>
+                    <span class="footer_item_child">友情链接</span>
+                </div>
+
+            </div>
+            <div class="footer_right">
+                <span>服务热线：400-678-8266</span>
+                <div class="app_store">
+                    <img src="img/icon-down-ios.png" alt="">
+                    <span>iphone</span>
+                </div>
+                <div class="app_store">
+                    <img src="img/icon-down-and.png" alt="">
+                    <span>Android</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <span>Copyright © 2013-2017 jikexueyuan.com All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210</span>
+            <img src="img/cert.png" alt="">
+        </div>
+    </div>
+</div>
+</div>
+<!--set js-->
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

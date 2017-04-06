@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*最外层容器*/
+.con {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -160px;
+}
+
+
+/*顶部方块*/
+.top {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #2F6A92;
+    box-shadow: 0 0 3px 3px #BEBCBC;
+}
+
+
+/*中间三个方块最外层*/
+.mid {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*中间三个方块外层*/
+.outer {
+    margin: auto;
+}
+
+
+/*左边方块*/
+.left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #542873;
+    box-shadow: 0 0 3px 3px #BEBCBC;
+}
+
+
+/*中间方块*/
+.center {
+    float: left;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #F4EFF6;
+    box-shadow: 0 0 3px 3px #BEBCBC;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+/*右边方块*/
+.right {
+    float: left;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #35A038;
+    box-shadow: 0 0 3px 3px #BEBCBC;
+}
+
+
+/*icon 图片*/
+img {
+    vertical-align: middle;
+    width: 64px;
+    height: 64px;
+}
+
+
+/*顶部方块*/
+.bottom {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #891A2A;
+    box-shadow: 0 0 3px 3px #BEBCBC;
+}

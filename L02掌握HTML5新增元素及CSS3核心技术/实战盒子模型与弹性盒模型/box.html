@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>正常盒子与怪异盒子对比</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #xiezi {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    
+    .xiehe {
+        overflow: hidden;
+        margin: 100px;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        background-color: red;
+        border: 5px dashed #0F27FC;
+    }
+    
+    #xiezi1 {
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    
+    .xiehe1 {
+        margin: 50px;
+        margin-left: 100px;
+        width: 130px;
+        height: 130px;
+        padding: 10px;
+        background-color: red;
+        border: 5px dashed #0F27FC;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>正常盒子</h1>
+    <span>从里往外压，鞋盒和鞋子一样就行</span>
+    <div class="xiehe">
+        <div id="xiezi">
+            鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子鞋子
+        </div>
+    </div>
+    <hr>
+    <h1>怪异盒子</h1>
+    <span>先做盒，再做鞋，盒子大小等于==》鞋子大小，加盒子空间间距加材质厚度</span>
+    <div class="xiehe1">
+        <div id="xiezi1">
+            怪异的鞋子
+        </div>
+    </div>
+</body>
+
+</html>

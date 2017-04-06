@@ -1,0 +1,44 @@
+/*红色主题配置*/
+.width-lg .menus {
+    border-top: 2px solid #eea015;
+}
+
+.width-lg .menus .link.active   {
+    background-color: #eea015;
+}
+
+.width-lg .menus .link.active  :hover {
+    background-color: #eea015;
+    color: white;
+}
+
+.width-lg .menus .link   {
+    background: 0;
+}
+
+.width-lg .menus .link :hover {
+    color: #eea015;
+}
+
+.govsite-top .govsite-inner .title{
+    color: #eea015;
+}
+.govsite-top .govsite-inner{
+    border: solid 1px #eea015;
+}
+
+.s-br21{
+    border: 1px solid #eea015;
+}
+
+.s-fc20, .g-fc20, .s-fc20:hover, .s-fc20h:hover, .g-fc20h:hover {
+    color: #eea015;
+}
+
+.s-br20, .g-br20, .s-br20h:hover, .g-br20h:hover {
+    border: 1px solid #eea015;
+}
+
+.toptab .channel:hover{
+    color: #eea015;
+}

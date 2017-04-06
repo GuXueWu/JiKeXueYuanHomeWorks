@@ -1,0 +1,42 @@
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    font-size: 1.3em;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.score-input {
+    font-size: 3em;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+#result {
+    padding-left: 12px;
+    vertical-align: middle;
+    line-height: 100px;
+    border-radius: 6px;
+    border: 1px solid rgb(7, 211, 85);
+    font-size: 3em;
+    display: block;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.score-btn {
+    font-size: 1.4em;
+    display: block;
+    width: 400px;
+    height: 48px;
+    margin: 20px auto;
+}

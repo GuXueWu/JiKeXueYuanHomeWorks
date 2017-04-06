@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px arial;
+}
+
+
+/*清除浮动*/
+
+header {
+    overflow: hidden;
+}
+
+
+/*顶部部分*/
+
+header nav {
+    display: inline-block;
+    height: 40px;
+    float: right;
+}
+
+header nav a {
+    font-size: 14px;
+    color: #333333;
+    margin-left: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.setting {
+    font-weight: normal;
+    display: inline-block;
+    height: 40px;
+}
+
+.more {
+    border-top: 0;
+    border: solid 1px #38f;
+    font-weight: normal;
+    text-decoration: none;
+    right: 0;
+    color: white;
+    background-color: #38f;
+    display: inline-block;
+    width: 80px;
+}
+
+.moremenu {
+    padding-bottom: 40px;
+    margin-top: 40px;
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 80px;
+    border: 1px solid #A2A0A0;
+    border-top: 0;
+    background-color: white;
+}
+
+.moremenu hr {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.settingmenu {
+    margin-top: 40px;
+    display: none;
+    position: absolute;
+    right: 60px;
+    width: 80px;
+    border: 1px solid #A2A0A0;
+    background-color: white;
+}
+
+.settingmenu a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    width: 80px;
+    height: 30px;
+}
+
+.settingmenu a:link {
+    color: black;
+    background-color: white;
+}
+
+.settingmenu a:visited {
+    color: black;
+    background-color: white;
+}
+
+.settingmenu a:hover {
+    color: white;
+    background-color: #38f;
+}
+
+.settingmenu a:active {
+    color: white;
+    background-color: #38f;
+}
+
+.moremenu a {
+    display: block;
+}
+
+.moremenu img {
+    display: block;
+}
+
+.moremenu a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.moremenu a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.moremenu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.moremenu a:active {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*主体部分*/
+
+.content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.logocon{
+    width: 587px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoimg {
+    width: 270px;
+    height: 129px
+}
+
+.serachet {
+    display: inline-block;
+    width: 486px;
+    height: 36px;
+    font: 16px arial;
+    border: 1px solid #b8b8b8;
+    border-right: 0;
+    vertical-align: top;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    width: 587px;
+}
+
+.imgcon {
+    float: left;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+
+.imgcon img {
+    margin-top: 8px;
+    text-align: center;
+    line-height: 36px;
+}
+
+#wd {
+    margin-left: 8px;
+    float: left;
+    width: 442px;
+    height: 36px;
+    font: 16px arial;
+    border: none;
+    vertical-align: top;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.content button {
+    display: inline-block;
+    width: 100px;
+    height: 37px;
+    cursor: pointer;
+    line-height: 38px;
+    padding: 0;
+    border: 0;
+    background-color: #38f;
+    font-size: 16px;
+    color: white;
+}
+
+
+/*底部部分*/
+
+footer {
+    min-width: 500px;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+footer a:link {
+    color: black;
+     text-decoration: underline;
+}
+
+footer a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: black;
+     text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer img {
+    width: 13px;
+    height: 16px;
+}
+
+.desc {
+    margin-top: 5px;
+}
+
+.police {
+    margin-top: 5px;
+}
+
+.police img {
+    width: 14px;
+    height: 16px;
+}

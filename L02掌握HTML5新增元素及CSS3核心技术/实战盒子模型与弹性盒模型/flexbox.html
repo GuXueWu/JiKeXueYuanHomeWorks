@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="UTF-8">
+	<title>新弹性盒子模型</title>
+	<style type="text/css">
+		.con{
+			height: 300px;
+			display: -webkit-flex;
+			-webkit-flex-direction:column;
+			width: 600px;
+			background-color: green;
+		}
+		.first{
+			-webkit-order:2;
+			-webkit-flex:1;
+			height: 50px;
+			background-color: orange;
+		}
+		#second{
+			-webkit-order:3;
+			-webkit-flex:1;
+			height: 50px;
+			background-color: aquamarine;
+		}
+		.three{
+			-webkit-order:1;
+			-webkit-flex:1;
+			height: 50px;
+			background-color: #FE0AF7;
+		}
+
+		.con2{
+			height: 300px;
+			display: -webkit-flex;
+			-webkit-flex-direction:row;
+			width: 600px;
+			background-color: green;
+		}
+		.first2{
+			-webkit-order:2;
+			-webkit-flex:1;
+			height: 150px;
+			background-color: orange;
+		}
+		#second2{
+			-webkit-order:3;
+			-webkit-flex:1;
+			height: 150px;
+			background-color: aquamarine;
+		}
+		.three2{
+			-webkit-order:1;
+			-webkit-flex:1;
+			height: 150px;
+			background-color: #FE0AF7;
+		}
+	</style>
+</head>
+<body>
+ 	<h1>弹性盒子垂直分栏，排序(flex)</h1>
+	<div class="con">
+		<div class="first">第一个</div>
+		<div id="second">第二个</div>
+		<div class="three">第三个</div>
+	</div>
+
+	<h1>弹性盒子水平分栏，排序(flex)</h1>
+	<div class="con2">
+		<div class="first2">第一个</div>
+		<div id="second2">第二个</div>
+		<div class="three2">第三个</div>
+	</div>
+</body>
+</html>

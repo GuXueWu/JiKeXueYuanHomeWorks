@@ -1,0 +1,368 @@
+/**
+头部布局样式
+**/
+
+@import "color";
+
+.header {
+  background-color: $color_white;
+
+  .w-1000 {
+    width: 1000px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+  }
+
+  .logo img {
+    float: left;
+    width: 109px;
+    margin-top: 10px;
+    border: 0 none;
+  }
+
+  .menu {
+    float: left;
+    .header-menu {
+      margin-left: 50px;
+      display: inline-block;
+
+      a {
+        &:hover {
+          color: $main_green_color;
+        }
+      }
+
+      li {
+        position: relative;
+        font-size: 14px;
+        display: inline-block;
+        margin-right: 50px;
+        cursor: pointer;
+        height: 60px;
+        float: left;
+
+        i {
+          margin-left: 5px;
+        }
+
+        &:hover {
+          color: $main_green_color;
+          cursor: pointer;
+
+          .submenu {
+            display: block;
+            opacity: 1;
+            animation: myfirst 0.8s ease normal;
+            -moz-animation: myfirst 0.8s ease normal;
+            -webkit-animation: myfirst 0.8s ease normal;
+          }
+
+          .arrow-icon {
+            margin-bottom: -2px;
+            border-top: 1px solid $main_green_color;
+            border-left: 1px solid $main_green_color;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            animation: rotate 1s ease normal;
+            -moz-animation: rotate 1s ease normal;
+            -webkit-animation: rotate 1s ease normal;
+          }
+        }
+      }
+
+      .submenu {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        z-index: 1000;
+        top: 60px;
+        left: 0;
+        background: $color_white;
+        font-size: 12px;
+        color: #666;
+        width: 280px;
+        white-space: nowrap;
+        text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+
+        h3 {
+          margin: 10px 0;
+          padding: 0 15px;
+          background: $color_fafafa;
+          height: 28px;
+          line-height: 28px;
+          font-weight: 300;
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          color: #333;
+          padding: 0 15px;
+        }
+      }
+
+      .shoollist {
+        i {
+          width: 14px;
+          height: 14px;
+          display: inline-block;
+          margin-right: 10px !important;
+          background: url(http://e.jikexueyuan.com/headerandfooter/images/allicon4.png) 0 0 no-repeat;
+          background-position: 0 0;
+
+        }
+        .web-icon {
+          background: url(http://e.jikexueyuan.com/headerandfooter/images/allicon.png) 0 0 no-repeat;
+          background-size: 64px 64px;
+          background-position: -15px -27px;
+        }
+
+        .android-icon {
+          background-position: -2px -60px;
+        }
+
+        .python-icon {
+          background-position: -2px -2px;
+        }
+
+        .go-icon {
+          background-position: -2px -38px;
+        }
+
+        .ios-icon {
+          background-position: -2px -82px;
+        }
+      }
+
+      .vip-lesson {
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          color: #666;
+          padding: 0 15px;
+          white-space: nowrap;
+          text-decoration: none;
+          margin: 0px;
+          vertical-align: middle;
+          box-sizing: border-box;
+          font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+
+          span {
+            color: #bbb;
+            float: right;
+          }
+
+          &:hover {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            background: $color_fafafa;
+            color: $main_green_color;
+          }
+        }
+      }
+
+      .arrow-icon {
+        margin-left: 4px;
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #c1c1c1;
+        border-left: 1px solid #c1c1c1;
+        display: inline-block;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform-origin: 4px 4px;
+      }
+    }
+  }
+
+  .right-icon {
+    float: right;
+    text-align: right;
+    height: 60px;
+
+    span {
+      padding: 0;
+      height: 60px;
+      width: 17px;
+      display: inline-block;
+      margin-left: 25px;
+      cursor: pointer;
+      position: relative
+    }
+
+    .search-icon {
+      position: relative;
+      float: left;
+      background: url("http://e.jikexueyuan.com/headerandfooter/images/search-icon.png") 0 0 no-repeat;
+      background-size: 17px 17px;
+      background-position: 0, 0;
+      height: 60px;
+      line-height: 60px;
+      width: 17px;
+      display: inline-block;
+
+      &:hover {
+        background: url(http://e.jikexueyuan.com/headerandfooter/images/search-icon2.png) 0 0 no-repeat;
+        background-size: 17px 17px;
+        background-position: 0, 0;
+      }
+    }
+
+    .app-icon {
+      position: relative;
+      float: left;
+      background: url("http://e.jikexueyuan.com/headerandfooter/images/app-icon.png") 0 0 no-repeat;
+      background-size: 17px 17px;
+      background-position: 0, 0;
+      height: 60px;
+      line-height: 60px;
+      width: 17px;
+      display: inline-block;
+
+      .submenu {
+        display: none;
+        padding: 10px 0;
+        background: $color_white;
+        position: absolute;
+        width: 120px;
+        z-index: 1200;
+        top: 58px;
+        right: -50px;
+        img {
+          width: 100%;
+        }
+
+        .top-icon {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          display: block;
+          position: absolute;
+          top: -8px;
+          right: 50px;
+          width: 15px;
+          height: 15px;
+          border-top: 1px solid $line_color_ec;
+          border-left: 1px solid $line_color_ec;
+          display: inline-block;
+          background: $color_white;
+        }
+
+      }
+
+      &:hover {
+        background: url(http://e.jikexueyuan.com/headerandfooter/images/app-icon2.png) 0 0 no-repeat;
+        background-size: 17px;
+        background-position: 0, 0;
+
+        .submenu {
+          display: block;
+        }
+      }
+    }
+
+    .login-icon {
+      position: relative;
+      float: left;
+      background: url("http://e.jikexueyuan.com/headerandfooter/images/login-icon.png") 0 0 no-repeat;
+      background-size: 17px 17px;
+      background-position: 0, 0;
+      height: 60px;
+      line-height: 60px;
+      width: 17px;
+      display: inline-block;
+
+      &:hover{
+        .submenu {
+          display: block;
+        }
+      }
+
+      .submenu {
+        display: none;
+        padding: 10px 0;
+        background: $color_white;
+        position: absolute;
+        width: 120px;
+        z-index: 1200;
+        top: 58px;
+        right: -50px;
+
+        dd {
+          text-align: left;
+          font-size: 12px;
+          line-height: 35px;
+          vertical-align: middle;
+          margin: 0;
+          padding-left: 10px;
+
+          .reg-btn, .login-btn {
+            white-space: nowrap;
+            text-decoration: none;
+            margin: 0px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+            text-decoration: none;
+            width: 45%;
+            height: 35px;
+            line-height: 35px;
+            padding: 0 10px;
+            display: inline-block;
+            text-align: center;
+          }
+
+          a {
+            text-align: center;
+            text-decoration: none;
+            color: #666;
+            height: 35px;
+            line-height: 35px;
+            display: block;
+
+            &:hover {
+              background: $color_f5f5f5;
+              color: $main_green_color;
+            }
+          }
+
+          &:hover {
+            background: $color_f5f5f5;
+          }
+        }
+
+        .top-icon {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          display: block;
+          position: absolute;
+          top: -8px;
+          right: 50px;
+          width: 15px;
+          height: 15px;
+          border-top: 1px solid $line_color_ec;
+          border-left: 1px solid $line_color_ec;
+          display: inline-block;
+          background: $color_white;
+        }
+      }
+    }
+  }
+}

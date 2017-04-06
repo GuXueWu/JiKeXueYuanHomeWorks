@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.imgBox {
+    float: left;
+    position: relative;
+}
+
+.img {
+    margin: 4px;
+    padding: 4px;
+    border:1px solid #ddd;
+    box-shadow: 1px 1px 1px #ddd;
+    border-radius: 3px;
+    transform: scaleX(1) scaleY(1);
+}
+.img img{
+    width:200px;
+    height:auto;
+}
+
+
+.img:hover{
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+
+#container {
+    margin:0 auto;
+}

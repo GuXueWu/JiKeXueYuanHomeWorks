@@ -1,0 +1,166 @@
+
+@import "color";
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background: $color_white;
+
+  div, p, dd, dl, dt {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+  }
+
+  .info {
+    a {
+      &:hover {
+        color: $main_green_color;
+      }
+    }
+
+    dl {
+      width: 135px;
+      color: $color_gray_title;
+      float: left;
+      dt {
+        font-size: 14px;
+        line-height: 30px;
+      }
+      dd {
+        font-size: 12px;
+        line-height: 30px;
+        a {
+          color: $color_gray_txt;
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    .infocontainer {
+      position: relative;
+      width: 1000px;
+      height: 215px;
+      margin: 0 auto;
+      border-bottom: 1px solid $border_color;
+      padding-left: 224px;
+      padding-top: 25px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      position: absolute;
+      left: 0;
+      top: 25px;
+      display: inline-block;
+      width: 160px;
+
+      img {
+        width: 109px;
+        height: 40px;
+        display: block;
+      }
+
+      p {
+        font-size: 12px;
+        color: $color_gray_txt;
+        margin-top: 20px;
+      }
+    }
+
+  }
+
+  .download {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: inline-block;
+    width: 175px;
+    text-align: left;
+    .tel {
+      color: $color_gray_title;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .downCon {
+      position: relative;
+      display: inline-block;
+      width: 140px;
+      height: 30px;
+      border: 1px solid $line_color;
+      margin-bottom: 10px;
+      line-height: 30px;
+      color: $color_gray_title;
+      font-size: 13px;
+      padding-left: 40px;
+      cursor: pointer;
+    }
+
+    .ios {
+      background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-ios.png) no-repeat 0 0;
+      background-size: 30px 30px;
+      &:hover {
+        img {
+          display: block;
+        }
+      }
+    }
+
+    .android {
+      background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-and.png) no-repeat 0 0;
+      background-size: 30px 30px;
+      &:hover {
+        img {
+          display: block;
+        }
+      }
+    }
+
+    .downCon img {
+      display: inline-block;
+      width: 115px;
+      height: 153px;
+      position: absolute;
+      top: -157px;
+      left: 12px;
+      z-index: 2;
+      display: none;
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    color: $color_gray_txt;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+
+    a {
+      color: $color_gray_txt;
+    }
+
+    .down-wechat {
+      float: right;
+      height: 15px;
+      width: 20px;
+      background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-wechat.png)no-repeat 0 0;
+      background-size: 18px 15px;
+    }
+
+    .down-sina {
+      float: right;
+      height: 15px;
+      width: 20px;
+      margin-right: 10px;
+      background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-sina.png)no-repeat 0 0;
+      background-size: 20px 15px;
+    }
+
+  }
+
+}

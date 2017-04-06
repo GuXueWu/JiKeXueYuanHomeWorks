@@ -1,0 +1,352 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px arial;
+}
+
+/*外层容器*/
+.wrapper {
+    height: 100%;
+    position: relative;
+    min-width: 810px;
+    min-height: 650px;
+}
+
+input {
+    outline: none;
+}
+
+/*顶部导航*/
+header {
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 142px 0 0;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    float: left;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+/*设置下拉菜单*/
+.setting-menu{
+	position: absolute;
+	width: 46px;
+	height: 24px;
+	right: 75px;
+	text-align: center;
+}
+
+.setting-menu a{
+	margin: 0;
+	text-decoration: none;
+}
+
+.setting-menu .baidu-setting{
+	position: absolute;
+	top: 25px;
+	left: -16px;
+	width: 60px;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 5px #ddd;
+	z-index: 99;
+	display: none;
+}
+
+.setting-menu:hover .baidu-setting{
+	display: block;
+}
+
+.setting-menu .baidu-setting a{
+	display: inline-block;
+	width: 100%;
+	color: #333;
+}
+
+.setting-menu .baidu-setting a:hover{
+	color: white;
+	background: #3385ff;
+}
+
+.setting-menu .icon-tranggle{
+	top: -11px;
+	left: 25px;
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	border: 6px solid  transparent;
+	border-style: dashed dashed solid dashed;
+	border-bottom-color: #d8d8d8;
+}
+
+.icon-tranggle::after{
+	content: '.';
+	top: -4px;
+	left: -5px;
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	border: 5px solid  transparent;
+	border-style: dashed dashed solid dashed;
+	border-bottom-color: #FFFFFF;
+}
+
+/*更多菜单*/
+header nav .more {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: right;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+header nav .more:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*更多产品*/
+.more-product{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	min-height: 600px;
+	width: 75px;
+	border-left: 1px solid #ddd;
+	background-color: #f9f9f9;
+	z-index: 999;
+	display: none;
+}
+
+.more-product ul{
+	padding: 0px 5px ;
+	list-style-type: none;
+	text-align: center;
+}
+
+.more-product li{
+	position: relative;
+	height: 65px;
+	border-bottom: 1px solid #ddd;
+}
+
+.more-product a{
+	color: #333;
+	text-decoration: none;
+}
+
+.more-product a:hover{
+	text-decoration: underline;
+}
+
+.more-product .more-sub-btn{
+	height: 20px;
+	margin-top: 25px;
+	text-decoration: none;
+}
+
+ .more-sub-btn a:hover{
+ 	text-decoration: none;
+ }
+
+.more-product  .more-sub-one{
+	margin-top: 5px;
+	display: block;
+	width: 40px;
+	height: 36px;
+	margin: 5px auto;
+	background: url(../images/music.png) no-repeat;
+}
+
+.more-product  .more-sub-two{
+	margin-top: 5px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 5px auto;
+	background: url(../images/zhidao.png) no-repeat;
+}
+
+.more-product  .more-sub-three{
+	margin-top: 5px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 5px auto;
+	background: url(../images/image.png) no-repeat;
+}
+
+.more-product  .more-sub-four{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 5px auto;
+	background: url(../images/wenku.png) no-repeat;
+}
+
+.more-product  .more-sub-five{
+	margin-top: 5px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 5px auto;
+	background: url(../images/bang.png) no-repeat;
+}
+
+.more-product  .more-sub-six{
+	margin-top: 5px;
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 5px auto;
+	background: url(../images/tuiguang.png) no-repeat;
+}
+
+.more-product .more-all{
+	border: none;
+	padding-top: 25px;
+}
+
+/*主体部分*/
+.content {
+    position: relative;
+    top: 38.2%;
+    text-align: center;
+}
+
+.content .search-form {
+    width: 650px;
+    height: 191px;
+    position: relative;
+    top: -191px;
+    margin: 0 auto;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+.content .search-input {
+    width: 539px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    padding: 3px 0 3px 7px;
+    vertical-align: middle;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+.content .search-btn {
+    width: 100px;
+    height: 36px;
+    margin-left: -5px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background: #317ef3;
+}
+
+.content form {
+    position: relative;
+}
+
+
+/*pic图标设置*/
+.content .icon-pic {
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 16px;
+    top: 1px;
+    z-index: 1;
+    margin-top: 8px;
+    right: 108px;
+    background: url(../images/camera.png) no-repeat;
+    cursor: pointer;
+}
+
+.content .icon-pic:hover {
+    background-position: 0 -20px;
+}
+
+/*顶部部分*/
+footer {
+    margin-top: 50px;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #00c;
+}
+
+footer p a:hover {
+    color: #00c;
+}
+
+footer .copy-right a {
+    color: #666;
+}
+
+footer .copy-right a:hover {
+    color: #666;
+}
+
+footer .icon-copyright{
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	width: 14px;
+	height: 17px;
+	background: url(../images/copy_rignt_24.png) no-repeat;
+}

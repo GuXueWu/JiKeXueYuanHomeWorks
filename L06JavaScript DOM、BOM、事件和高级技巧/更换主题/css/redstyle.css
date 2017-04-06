@@ -1,0 +1,44 @@
+/*红色主题配置*/
+.width-lg .menus {
+    border-top: 2px solid red;
+}
+
+.width-lg .menus .link.active   {
+    background-color: red;
+}
+
+.width-lg .menus .link.active  :hover {
+    background-color: red;
+    color: white;
+}
+
+.width-lg .menus .link   {
+    background: 0;
+}
+
+.width-lg .menus .link :hover {
+    color: red;
+}
+
+.govsite-top .govsite-inner .title{
+    color: red;
+}
+.govsite-top .govsite-inner{
+    border: solid 1px red;
+}
+
+.s-br21{
+    border: 1px solid red;
+}
+
+.s-fc20, .g-fc20, .s-fc20:hover, .s-fc20h:hover, .g-fc20h:hover {
+    color: red;
+}
+
+.s-br20, .g-br20, .s-br20h:hover, .g-br20h:hover {
+    border: 1px solid red;
+}
+
+.toptab .channel:hover{
+    color: red;
+}

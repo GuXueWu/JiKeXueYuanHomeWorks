@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-width: 600px;
+}
+
+.header {
+    display: block;
+    width: 100%;
+    height: 100px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.header p {
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.content {
+    /*这个overflow属性的作用是：隐藏溢出*/
+    overflow: hidden;
+}
+
+
+/*main left right 都要设置float为left 然后left和right的布局通过marginleft来控制位置*/
+
+.main {
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    float: left;
+}
+
+.inner {
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
+.inner p {
+    margin: 10px;
+    text-indent: 2em;
+}
+
+.left {
+    border-right: 1px solid #333;
+    width: 150px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    float: left;
+    margin-left: -100%;
+}
+
+.left p {
+    background-color: #4BE5FC;
+    text-align: center;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+}
+
+.left li {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.right {
+    border-left: 1px solid #333;
+    width: 200px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    float: left;
+    margin-left: -201px;
+}
+
+.right a {
+    display: block;
+}
+
+.right p {
+    background-color: #4BE5FC;
+    text-align: center;
+    line-height: 40px;
+    width: 200px;
+    height: 40px;
+}
+
+.right img {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.footer {
+    border-top: 1px solid #333;
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}

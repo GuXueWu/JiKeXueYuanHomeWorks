@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>简易计算器</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<!-- 容器-->
+<div class="container">
+    <!-- 标题-->
+    <h1>花式计算器
+        <small> -顾学武</small>
+    </h1>
+    <!-- 计算器-->
+    <div class="outer">
+        <div class="calculator">
+            <input type="text" id="input-box" value="0" size="21" maxlength="21"
+                   readonly="readonly">
+            <div class="line">
+                <button onclick="operator('clear')" type="button" class="btn btn-danger smallbtn">
+                    C
+                </button>
+                <button onclick="operator('opposite')" type="button"
+                        class="btn btn-success smallbtn notfirst">+/-
+                </button>
+                <button onclick="operator('percent')" type="button"
+                        class="btn btn-success smallbtn notfirst">%
+                </button>
+                <button onclick="operator('backspace')" type="button"
+                        class="btn btn-danger bigbtn notfirst">←
+                </button>
+            </div>
+            <div class="line">
+                <button onclick="typetoinput('7')" type="button" class="btn btn-primary smallbtn">
+                    7
+                </button>
+                <button onclick="typetoinput('8')" type="button"
+                        class="btn btn-primary smallbtn notfirst">8
+                </button>
+                <button onclick="typetoinput('9')" type="button"
+                        class="btn btn-primary smallbtn notfirst">9
+                </button>
+                <button onclick="operator('plus')" type="button"
+                        class="btn btn-success smallbtn notfirst">+
+                </button>
+                <button onclick="operator('minus')" type="button"
+                        class="btn btn-success smallbtn notfirst">-
+                </button>
+                <button onclick="operator('cos')" type="button"
+                        class="btn btn-success smallbtn notfirst">cos
+                </button>
+            </div>
+            <div class="line">
+                <button onclick="typetoinput('4')" type="button" class="btn btn-primary smallbtn">
+                    4
+                </button>
+                <button onclick="typetoinput('5')" type="button"
+                        class="btn btn-primary smallbtn notfirst">5
+                </button>
+                <button onclick="typetoinput('6')" type="button"
+                        class="btn btn-primary smallbtn notfirst">6
+                </button>
+                <button onclick="operator('multiply')" type="button"
+                        class="btn btn-success smallbtn notfirst">X
+                </button>
+                <button onclick="operator('divide')" type="button"
+                        class="btn btn-success smallbtn notfirst">÷
+                </button>
+                <button onclick="operator('sin')" type="button"
+                        class="btn btn-success smallbtn notfirst">sin
+                </button>
+            </div>
+            <div class="line">
+                <button onclick="typetoinput('1')" type="button" class="btn btn-primary smallbtn">
+                    1
+                </button>
+                <button onclick="typetoinput('2')" type="button"
+                        class="btn btn-primary smallbtn notfirst">2
+                </button>
+                <button onclick="typetoinput('3')" type="button"
+                        class="btn btn-primary smallbtn notfirst">3
+                </button>
+                <button onclick="operator('pow')" type="button"
+                        class="btn btn-success smallbtn notfirst">x²
+                </button>
+                <button onclick="operator('sqrt')" type="button"
+                        class="btn btn-success smallbtn notfirst">√
+                </button>
+                <button onclick="operator('log')" type="button"
+                        class="btn btn-success smallbtn notfirst">log
+                </button>
+            </div>
+            <div class="line">
+                <button onclick="typetoinput('0')" type="button" class="btn btn-primary midbtn">0
+                </button>
+                <button onclick="typetoinput('.')" type="button"
+                        class="btn btn-primary smallbtn notfirst">.
+                </button>
+                <button onclick="operator('result')" type="button"
+                        class="btn btn-danger bigbtn notfirst">=
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

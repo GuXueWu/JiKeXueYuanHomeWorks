@@ -1,0 +1,40 @@
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    font-size: 1.3em;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.custom-input {
+    font-size: 2em;
+    width: 400px;
+    height: 60px;
+    margin: 20px auto;
+}
+
+.custom-btn {
+    font-size: 1.4em;
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+
+}
+
+.btn-container{
+    width: 400px;
+    margin: 20px auto;
+}
+
+.help-block{
+    width: 400px;
+    height: auto;
+    margin: 0px auto;
+}

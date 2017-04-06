@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>百度新闻首页</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css?t=111">
+</head>
+<body>
+
+<div class="container">
+    <header class="cf">
+        <a href="#"><span class="iconfont icon-baidu"></span></a>
+        <a href="#"><span class="iconfont icon-geren"></span></a>
+        <a href="#"><span class="iconfont icon-tianjia"></span></a>
+        <a href="#"><span class="iconfont icon-sousuo_sousuo"></span></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">精选</a><i></i></li>
+            <li><a href="#">百家</a><i></i></li>
+            <li><a href="#">本地</a><i></i></li>
+            <li><a href="#">娱乐</a><i></i></li>
+            <li><a href="#">社会</a><i></i></li>
+            <li><a href="#">军事</a><i></i></li>
+            <li><a href="#">女人</a><i></i></li>
+            <li><a href="#">搞笑</a><i></i></li>
+            <li><a href="#">互联网</a><i></i></li>
+            <li><a href="#">科技</a><i></i></li>
+            <li><a href="#">更多</a><i></i></li>
+        </ul>
+    </nav>
+
+    <article class="new-main">
+        <ul class="news-lists">
+            <!-- 动态添加-->
+        </ul>
+    </article>
+</div>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/news.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var deviceWidth = $('body').width();
+        $('nav li').each(function (index, item) {
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+        });
+    });
+</script>
+</body>
+</html>

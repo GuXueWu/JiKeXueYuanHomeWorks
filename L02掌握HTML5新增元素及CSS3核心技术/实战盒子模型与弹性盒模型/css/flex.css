@@ -1,0 +1,26 @@
+.left{
+	float: left;
+	width: 300px;
+	background-color: #FFA51A;
+}
+
+.right{
+	margin-left: 5px;
+	float: left;
+	width: 300px;
+	background-color: #FF1AC1;
+}
+
+.col{
+	-webkit-column-count:2;
+	-webkit-column-rule-style:dotted;
+}
+
+.center{
+	height: 300px;
+	width: 300px;
+	background-color: orange;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+}

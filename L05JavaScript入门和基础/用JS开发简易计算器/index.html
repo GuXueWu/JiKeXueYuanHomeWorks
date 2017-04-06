@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        /**
+         *计算
+         * */
+        function calculate() {
+            var first = document.getElementById("first").value;
+            var operator = document.getElementById("operator").value;
+            var second = document.getElementById("second").value;
+            if (check(first, operator, second)) {
+                var firstValue = parseInt(first);
+                var secondValue = parseInt(second);
+                switch (operator) {
+                    case "*":
+                        document.getElementById("result").value = firstValue * secondValue + "";
+                        break;
+                    case "/":
+                        document.getElementById("result").value = firstValue / secondValue + "";
+                        break;
+                    case "+":
+                        document.getElementById("result").value = (firstValue + secondValue) + "";
+                        break;
+                    case "-":
+                        document.getElementById("result").value = (firstValue - secondValue) + "";
+                        break;
+                    default:
+                        break
+                }
+            }
+
+        }
+
+        /**
+         * 校验数据
+         * @param first
+         * @param operator
+         * @param second
+         * @returns {boolean}
+         */
+        function check(first, operator, second) {
+            var firstValue = parseInt(first);
+            var secondValue = parseInt(second);
+            if (isNaN(firstValue) || isNaN(secondValue)) {
+                alert("请输入合法数字！")
+                return false;
+            }
+
+            if (operator == "") {
+                alert("请输入合法操作符！")
+                return false;
+            } else {
+                switch (operator) {
+                    case "*":
+                    case "/":
+                    case "+":
+                    case "-":
+                        break;
+                    default:
+                        alert("请输入合法操作符！")
+                        return false;
+                        break
+                }
+            }
+
+            if (operator == "/" && secondValue == 0) {
+                alert("除数不能为0")
+                return false;
+            }
+
+            return true;
+        }
+
+        /***
+         * 清空输入框
+         */
+        function clearInput() {
+            document.getElementById("first").value = "";
+            document.getElementById("operator").value = "";
+            document.getElementById("second").value = "";
+            document.getElementById("result").value = "";
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>简易计算器</h1>
+    <!--输入框部分-->
+    <label for="first">第一个数：</label>
+    <input class="custom-input form-control input-lg" type="text" id="first"
+           placeholder="请输入第一个数">
+    <label for="operator">操作符号：</label>
+    <input class="custom-input form-control input-lg" type="text" id="operator"
+           placeholder="请输入操作符">
+    <span class="help-block">请输入加、减、乘、除符号.</span>
+    <label for="second">第二个数：</label>
+    <input class="custom-input form-control input-lg" type="text" id="second"
+           placeholder="请输入第二个数">
+    <label for="result">计算结果：</label>
+    <input class="custom-input form-control input-lg" type="text" id="result"
+           placeholder="等待结果..." disabled>
+    <!--底部按钮-->
+    <div class="btn-container">
+        <button type="button" class="custom-btn btn btn-danger" onclick="clearInput()">清空
+        </button>
+        <button type="button" class="custom-btn btn btn-success" onclick="calculate()">计算
+        </button>
+    </div>
+
+</div>
+</body>
+</html>

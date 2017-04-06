@@ -1,0 +1,87 @@
+/*红色*/
+#redstyle {
+    background: red;
+    color: white;
+}
+
+#redstyle a {
+    color: white;
+}
+
+#redstyle a:hover {
+    background: darkred;
+}
+
+#redstyle:hover {
+    background: darkred;
+}
+
+/*黄色*/
+#yellowstyle {
+    background: #eea015;
+    color: white;
+}
+
+#yellowstyle a {
+    color: white;
+}
+
+#yellowstyle a:hover {
+    background: #ee6004;
+}
+
+#yellowstyle:hover {
+    background: #ee6004;
+}
+
+/*绿色*/
+#greenstyle {
+    background: green;
+    color: white;
+}
+
+#greenstyle a {
+    color: white;
+}
+
+#greenstyle a:hover {
+    background: darkgreen;
+}
+
+#yellowstyle:hover {
+    greenstyle: darkgreen;
+}
+
+/*蓝色*/
+#bluestyle {
+    background: blue;
+    color: white;
+}
+
+#bluestyle a {
+    color: white;
+}
+
+#bluestyle a:hover {
+    background: darkblue;
+}
+
+#bluestyle:hover {
+    greenstyle: darkblue;
+}
+
+.width-lg .hao123-links {
+    float: right;
+    height: 60px;
+    padding: 0 0 0 0;
+}
+
+#styledesc {
+    color: black;
+    font-size: 14px;
+}
+
+
+
+
+

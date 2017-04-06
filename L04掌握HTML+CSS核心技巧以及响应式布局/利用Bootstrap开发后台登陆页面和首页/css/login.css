@@ -1,0 +1,69 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 600px;
+    background: -webkit-linear-gradient( top, #76D03B, white);
+    background: -o-linear-gradient(bottom, #76D03B, white);
+    background: -moz-linear-gradient(bottom, #76D03B, white);
+    background: linear-gradient(to bottom, #76D03B, white);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100%;
+}
+
+.logo{
+  display: block;
+  margin:0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin-heading{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

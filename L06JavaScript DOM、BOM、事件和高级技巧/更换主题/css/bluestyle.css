@@ -1,0 +1,44 @@
+/*红色主题配置*/
+.width-lg .menus {
+    border-top: 2px solid blue;
+}
+
+.width-lg .menus .link.active   {
+    background-color: blue;
+}
+
+.width-lg .menus .link.active  :hover {
+    background-color: blue;
+    color: white;
+}
+
+.width-lg .menus .link   {
+    background: 0;
+}
+
+.width-lg .menus .link :hover {
+    color: blue;
+}
+
+.govsite-top .govsite-inner .title{
+    color: blue;
+}
+.govsite-top .govsite-inner{
+    border: solid 1px blue;
+}
+
+.s-br21{
+    border: 1px solid blue;
+}
+
+.s-fc20, .g-fc20, .s-fc20:hover, .s-fc20h:hover, .g-fc20h:hover {
+    color: blue;
+}
+
+.s-br20, .g-br20, .s-br20h:hover, .g-br20h:hover {
+    border: 1px solid blue;
+}
+
+.toptab .channel:hover{
+    color: blue;
+}

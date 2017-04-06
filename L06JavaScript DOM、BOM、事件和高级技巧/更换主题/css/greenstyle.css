@@ -1,0 +1,44 @@
+/*红色主题配置*/
+.width-lg .menus {
+    border-top: 2px solid green;
+}
+
+.width-lg .menus .link.active   {
+    background-color: green;
+}
+
+.width-lg .menus .link.active  :hover {
+    background-color: green;
+    color: white;
+}
+
+.width-lg .menus .link   {
+    background: 0;
+}
+
+.width-lg .menus .link :hover {
+    color: green;
+}
+
+.govsite-top .govsite-inner .title{
+    color: green;
+}
+.govsite-top .govsite-inner{
+    border: solid 1px green;
+}
+
+.s-br21{
+    border: 1px solid green;
+}
+
+.s-fc20, .g-fc20, .s-fc20:hover, .s-fc20h:hover, .g-fc20h:hover {
+    color: green;
+}
+
+.s-br20, .g-br20, .s-br20h:hover, .g-br20h:hover {
+    border: 1px solid green;
+}
+
+.toptab .channel:hover{
+    color: green;
+}

@@ -1,0 +1,282 @@
+/*全局样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*视图外部容器属性*/
+.wrapper {
+	min-width: 600px;
+}
+
+/*顶部标题*/
+header{
+	font-size: 30px;
+	background-color: #0BFBB0;
+	vertical-align: middle;
+	line-height: 60px;
+	height: 60px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/*魔方外层容器样式*/
+.cube-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*魔方样式*/
+.cube {
+    /*开启3D视图*/
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    backface-visibility: hidden;
+    /*动画样式*/
+    -webkit-animation: change 16s linear infinite;
+    -moz--animation: change 16s linear infinite;
+    animation: change 16s linear infinite;
+}
+
+
+/*动画*/
+@-webkit-keyframes change {
+    0% {
+        -webkit-transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+    }
+    33% {
+        -webkit-transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+    }
+    66% {
+        -webkit-transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+    }
+    100% {
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+    }
+}
+
+@-moz-keyframes change {
+    0% {
+        -webkit-transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+    }
+    33% {
+        -webkit-transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+    }
+    66% {
+        -webkit-transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+    }
+    100% {
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+    }
+}
+
+@keyframes change {
+    0% {
+        transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+    }
+    33% {
+        transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+    }
+    66% {
+        transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+    }
+    100% {
+        transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+    }
+}
+
+/*六大面通用样式*/
+.cube>div {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*前面样式*/
+.front {
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-transform: translateZ(150px);
+    -moz-transform: translateZ(150px);
+    transform: translateZ(150px);
+}
+
+/*后面样式*/
+.back {
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-transform: translateZ(-150px);
+    -moz-transform: translateZ(-150px);
+    transform: translateZ(-150px);
+}
+
+/*左面样式*/
+.left {
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+    -moz-transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+
+/*右面样式*/
+.right {
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-transform: rotateY(90deg) translateZ(-150px);
+    -moz-transform: rotateY(90deg) translateZ(-150px);
+    transform: rotateY(90deg) translateZ(-150px);
+}
+
+
+/*上面样式*/
+.top {
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+    -moz-transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+
+/*下面样式*/
+.bottom {
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-transform: rotateX(90deg) translateZ(-150px);
+    -moz-transform: rotateX(90deg) translateZ(-150px);
+    transform: rotateX(90deg) translateZ(-150px);
+}
+
+
+/*每个面的内部小方块基础属性*/
+.smallsquare {
+    position: absolute;
+    height: 96px;
+    width: 96px;
+    border-radius: 10px;
+}
+
+
+/*前面的颜色*/
+.front div {
+    background: #8A2BE2;
+}
+
+
+/*后面的颜色*/
+.back div {
+    background: #0856F9;
+}
+
+
+/*左面的颜色*/
+.left div {
+    background: #F90895;
+}
+
+
+/*右面的颜色*/
+.right div {
+    background: #08F92F;
+}
+
+/*底部的颜色*/
+.bottom div {
+    background: #E8F908;
+}
+
+
+/*顶面的颜色*/
+.top div {
+    background: #F92A08;
+}
+
+
+/*每个面第一个小方块的定位*/
+.one {
+    left: 3px;
+    top: 3px;
+}
+
+
+/*每个面第二个小方块的定位*/
+.two {
+    left: 102px;
+    top: 3px;
+}
+
+
+/*每个面第三个小方块的定位*/
+.three {
+    left: 201px;
+    top: 3px;
+}
+
+
+/*每个面第四个小方块的定位*/
+.four {
+    left: 3px;
+    top: 102px;
+}
+
+
+/*每个面第五个小方块的定位*/
+.five {
+    left: 102px;
+    top: 102px;
+}
+
+
+/*每个面第六个小方块的定位*/
+.six {
+    left: 201px;
+    top: 102px;
+}
+
+
+/*每个面第七个小方块的定位*/
+.seven {
+    left: 3px;
+    top: 201px;
+}
+
+
+/*每个面第八个小方块的定位*/
+.eight {
+    left: 102px;
+    top: 201px;
+}
+
+
+/*每个面第九个小方块的定位*/
+.nine {
+    left: 201px;
+    top: 201px;
+}
+
+
+/* 底部版权 */
+footer{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+
+footer p{
+	text-align: center;
+}

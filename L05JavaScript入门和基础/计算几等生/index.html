@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生分级系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        /**
+         * 计算学生等级
+         */
+        function calculateLevel() {
+            var score = document.getElementById("score").value;
+            var temp = parseInt(score);
+            if (isNaN(temp)) {
+                document.getElementById("result").innerText = "等待计算结果...";
+                alert("请输入合法数字！")
+            } else {
+                if (temp > 100 || temp < 0) {
+                    document.getElementById("result").innerText = "等待计算结果...";
+                    alert("请输入合法数字！")
+                } else {
+                    calculate(temp);
+                }
+            }
+        }
+
+        /**
+         * 合法数据最终计算
+         * @param score
+         */
+        function calculate(score) {
+            if (score > 90) {
+                document.getElementById("result").innerText = "一等生";
+            }
+            else if (score > 80) {
+                document.getElementById("result").innerText = "二等生";
+            }
+            else if (score > 70) {
+                document.getElementById("result").innerText = "三等生";
+            }
+            else if (score > 60) {
+                document.getElementById("result").innerText = "四等生";
+            }
+            else if (score > 50) {
+                document.getElementById("result").innerText = "五等生";
+            }
+            else if (score > 40) {
+                document.getElementById("result").innerText = "六等生";
+            }
+            else if (score > 30) {
+                document.getElementById("result").innerText = "七等生";
+            }
+            else if (score > 20) {
+                document.getElementById("result").innerText = "八等生";
+            }
+            else if (score > 10) {
+                document.getElementById("result").innerText = "九等生";
+            }
+            else if (score >= 0) {
+                document.getElementById("result").innerText = "十等生";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>学生分级系统</h1>
+    <form>
+        <label for="score">请输入分数：</label>
+        <input class="score-input form-control input-lg" type="text" id="score"
+               placeholder="请输入学生分数">
+
+        <label>输出结果：</label>
+        <p id="result">等待计算结果...</p>
+
+        <button type="button" class="score-btn btn btn-success" onclick="calculateLevel()">计算分级
+        </button>
+    </form>
+</div>
+</body>
+</html>

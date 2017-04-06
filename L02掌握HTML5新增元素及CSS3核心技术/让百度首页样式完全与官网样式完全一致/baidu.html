@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/baidu.css">
+    <script type="text/javascript">
+    // 鼠标移动到更多菜单
+    function onMoreOn() {
+        var moremenu = document.getElementById("moremenu");
+        var morelink = document.getElementById("more");
+        if (moremenu.style.display != "block") {
+            moremenu.style.display = "block";
+            morelink.style.color = 'black';
+            morelink.style.backgroundColor = 'white';
+            morelink.style.border = "solid 1px #A2A0A0";
+        }
+    }
+
+    //鼠标离开更多菜单
+    function onMoreOff() {
+        var moremenu = document.getElementById("moremenu");
+        var morelink = document.getElementById("more");
+        if (moremenu.style.display != "none") {
+            moremenu.style.display = "none";
+            morelink.style.color = 'white';
+            morelink.style.backgroundColor = '#38f';
+            morelink.style.border = "solid 1px #38f";
+        }
+    }
+
+    // 鼠标移动到设置菜单
+    function onSettingOn() {
+        var settingmenu = document.getElementById("settingmenu");
+        if (settingmenu.style.display != "block") {
+            settingmenu.style.display = "block";
+        }
+    }
+
+    //鼠标离开设置菜单
+    function onSettingOff() {
+        var settingmenu = document.getElementById("settingmenu");
+        if (settingmenu.style.display != "none") {
+            settingmenu.style.display = "none";
+        }
+    }
+
+
+    // 鼠标移动到按钮
+    function onSubmitOn() {
+        var submit = document.getElementById("submit");
+        submit.style.backgroundColor = "#3B7CD7";
+    }
+
+    //鼠标离开按钮
+    function onSubmitOff() {
+        var submit = document.getElementById("submit");
+        submit.style.backgroundColor = '#38f';
+    }
+
+    // 鼠标移动到相机icon
+    function onCamerOn() {
+        var carmer = document.getElementById("carmer");
+        carmer.src = 'images/carmer_on.png';
+    }
+
+    //鼠标离开相机icon
+    function onCamerOff() {
+        var carmer = document.getElementById("carmer");
+        carmer.src = 'images/carmer.png';
+    }
+
+    //输入框获取焦点
+    function onWDFocus() {
+        var serachet = document.getElementById("serachet");
+        serachet.style.borderColor="#38f";
+    }
+
+
+    //输入框丢失焦点
+    function onWDBlue() {
+var serachet = document.getElementById("serachet");
+serachet.style.borderColor="#b8b8b8";
+    }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- top start -->
+        <header>
+            <nav>
+                <a href="http://news.baidu.com/" target="_blank">新闻</a>
+                <a href="http://www.hao123.com/" target="_blank">hao123</a>
+                <a href="http://map.baidu.com/" target="_blank">地图</a>
+                <a href="http://v.baidu.com/" target="_blank">视频</a>
+                <a href="http://tieba.baidu.com/" target="_blank">贴吧</a>
+                <a href="http://i.baidu.com/" target="_blank">登录</a>
+                <!-- 使用javascript取消a标签的默认设置 -->
+                <a href="javascript:;" class="setting" onmouseover="onSettingOn()" onmouseout="onSettingOff()">设置</a>
+                <a href="javascript:;" id="more" class="more" onmouseover="onMoreOn()" onmouseout="onMoreOff()">更多产品</a>
+            </nav>
+            <div class="settingmenu" id="settingmenu" onmouseover="onSettingOn()" onmouseout="onSettingOff()">
+                <a href="javascript:;">搜索设置</a>
+                <a href="javascript:;">高级搜索</a>
+                <a href="javascript:;">关闭预测</a>
+                <a href="javascript:;">搜索历史</a>
+            </div>
+            <div class="moremenu" id="moremenu" onmouseover="onMoreOn()" onmouseout="onMoreOff()">
+                <table>
+                    <tr>
+                        <td align="center" width="80px" height="80px">
+                            <a href="http://music.baidu.com/" target="_blank"><img src="images/music.png" alt="music"> 音乐
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" width="80px" height="80px">
+                            <a href="http://image.baidu.com/" target="_blank"><img src="images/image.png" alt="music"> 图片
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" width="80px" height="80px">
+                            <a href="http://zhidao.baidu.com/" target="_blank"><img src="images/zhidao.png" alt="music"> 知道
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" width="80px" height="80px">
+                            <a href="http://wenku.baidu.com/" target="_blank"><img src="images/wenku.png" alt="music"> 文库
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" width="80px" height="80px">
+                            <a href="http://top.baidu.com/" target="_blank"> <img src="images/bang.png" alt="music"> 风云榜
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" width="80px" height="80px">
+                            <a href="http://e.baidu.com/" target="_blank"><img src="images/tuiguang.png" alt="music"> 推广
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="40px"><a href="http://www.baidu.com/more/" target="_blank">全部产品>></a></td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <!-- top end -->
+        <!-- content start -->
+        <div class="content">
+            <div class="logocon"><img src="images/baidu_logo.png" alt="百度一下" class="logoimg"></div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="search">
+                    <div class="serachet" id="serachet">
+                        <!-- name属性用于当做传值的key -->
+                        <input type="text" name="wd" id="wd" onfocus="onWDFocus()" onblur="onWDBlue()">
+                        <div class="imgcon"><img src="images/carmer.png" alt="carmer" width="20px" height="20px" id="carmer" onmouseover="onCamerOn()" onmouseout="onCamerOff()"></div>
+                    </div><button type="submit" id="submit" onmouseover="onSubmitOn()" onmouseout="onSubmitOff()">百度一下</button>
+                </div>
+            </form>
+        </div>
+        <!-- content end -->
+        <!-- foot start -->
+        <footer>
+            <p class="about">
+                <a href="https://www.baidu.com/cache/sethelp/index.html" target="_blank">把百度设为首页</a>
+                <a href="http://home.baidu.com/" target="_blank">关于百度</a>
+                <a href="http://home.baidu.com/" target="_blank">About Baidu</a>
+            </p>
+            <p class="desc">
+                <span>©2016&nbsp;Baidu&nbsp;</span>
+                <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a> &nbsp;&nbsp;
+                <a href="http://jianyi.baidu.com/" target="_blank">意见反馈</a>
+                <span>京ICP证030173号&nbsp;</span>
+                <img src="images/copy_rignt_24.png">
+            </p>
+            <p class="police">
+                <img src="images/icon_police.png">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank"><i></i>京公网安备11000002000001号</a>
+            </p>
+        </footer>
+        <!-- foot end -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*标题*/
+header {
+    min-width: 600px;
+    display: block;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #48F8F6;
+}
+
+/*头部轮廓*/
+.head {
+    margin-left: -200px;
+    margin-top: -150px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 400px;
+    height: 259px;
+    border-bottom-right-radius: 349px;
+    border-bottom-left-radius: 575px;
+    transform: rotate(9deg);
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+/*粗粗的眉毛*/
+.eyebrows {
+    border-right: 33px solid black;
+    width: 203px;
+    height: 133px;
+    position: absolute;
+    border-top-right-radius: 122px;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: 108px;
+    transform: rotate(180deg)
+}
+
+/*眼圈*/
+.eyeouter {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 102px;
+    background-color: black;
+    width: 163px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -192px;
+    margin-left: 72px;
+    transform: rotate(53deg);
+}
+
+/*眼圈留白*/
+.eyeouter::after {
+    background-color: white;
+    border-radius: 101px;
+    content: "";
+    width: 163px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -132px;
+    margin-left: -86px;
+    transform: rotate(0deg);
+}
+
+/*眼球*/
+.eye {
+    margin-left: 194px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    background-color: black;
+    margin-top: 28px;
+}
+
+/*眼球留白*/
+.eye::after {
+    display: block;
+    content: "";
+    margin-left: 9px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% 50%;
+    background-color: white;
+    transform: translateY(10px);
+    /*眼睛动画*/
+    -webkit-animation: change 2s linear infinite;
+    animation: change 2s linear infinite;
+}
+
+
+/*动画*/
+@-webkit-keyframes change {
+    0% {
+        -webkit-transform: scale(1) translateY(10px);
+    }
+    33% {
+        -webkit-transform: scale(0.5) translateY(15px);
+    }
+    100% {
+        -webkit-transform: scale(0) translateY(20px);
+    }
+}
+
+@keyframes change {
+    0% {
+        transform: scale(1) translateY(10px);
+    }
+    33% {
+        transform: scale(0.5) translateY(15px);
+    }
+    100% {
+        transform: scale(0) translateY(20px);
+    }
+}
+
+/*上面的耳朵*/
+.eartop {
+    background-color: black;
+    border-bottom-left-radius: 76px;
+    border-bottom-right-radius: 269px;
+    border-left: 33px solid white;
+    width: 91px;
+    height: 177px;
+    position: absolute;
+    border-top-left-radius: 364px;
+    left: 50%;
+    top: 50%;
+    margin-top: -267px;
+    margin-left: 202px;
+    transform: rotate(180deg) scale(0.7);
+}
+
+/*下面的耳朵*/
+.eardown {
+    background-color: black;
+    border-bottom-left-radius: 76px;
+    border-bottom-right-radius: 269px;
+    border-left: 33px solid white;
+    width: 91px;
+    height: 177px;
+    position: absolute;
+    border-top-left-radius: 364px;
+    left: 50%;
+    top: 50%;
+    margin-top: -160px;
+    margin-left: 234px;
+    transform: rotate(266deg) scale(0.8);
+}
+
+/*鼻子*/
+.nose {
+    background-color: black;
+    margin-left: -195px;
+    margin-top: -176px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform: rotate(19deg);
+    overflow: hidden;
+}
+
+/*鼻子留白*/
+.nose::after {
+    content: "";
+    display: block;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 33px;
+    height: 16px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform: rotate(9deg);
+    overflow: hidden;
+    margin-left: -35px;
+}
+
+/*微笑的嘴*/
+.mouth {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-right: 6px solid black;
+    width: 100px;
+    height: 70px;
+    border-bottom-right-radius: 70px 70px;
+    margin-left: 10px;
+    margin-top: 34px;
+    transform: rotate(24deg);
+}
+
+/*底部版权*/
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    min-width: 600px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    background-color: #48F8F6;
+}
